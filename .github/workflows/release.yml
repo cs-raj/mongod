@@ -19,7 +19,7 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Build
-        run: npm run prepack
+        run: npm run build-ts
       - name: Upload dist
         uses: actions/upload-artifact@v3.1.2
         with:
