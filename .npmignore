@@ -1,0 +1,23 @@
+# Source files
+src
+
+# Data
+_contents
+
+# Node module dependencies
+node_modules
+
+# Others
+.vscode
+package-lock.json
+coverage
+
+# Example details
+example/*
+!example/index.js
+!example/config.js
+
+# Config files
+jest.config.js
+tsconfig.json
+.jsbeautifyrc

@@ -1,0 +1,20 @@
+name: Release datasync content store mongodb
+on:
+  push:
+    branches: [main]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3.5.3
+      - uses: actions/setup-node@v3.7.0
+        with:
+          node-version: "18.x"
+      - name: Installing dependencies
+        run: npm install
+      - name: Build
+        run: npm run build-ts
+      - name: Publishing datasync content store mongodb
+        uses: JS-DevTools/npm-publish@v2.2.0
+        with:
+          token: ${{ secrets.NPM_TOKEN }}
