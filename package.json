@@ -23,9 +23,9 @@
   },
   "scripts": {
     "clean": "rimraf dist",
-    "build-ts": "npm run clean && tsc",
+    "build-ts": "npm run clean && npm run compile",
     "watch-ts": "npm run clean && tsc -w",
-    "compile": "tsc",
+    "compile": "tsc -b tsconfig.json",
     "pretest": "npm run clean && npm run compile",
     "tslint": "npx tslint -c tslint.json 'src/**/*.ts'",
     "test": "jest --detectOpenHandles --verbose --colors"
