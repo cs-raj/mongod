@@ -25,9 +25,7 @@
     "build-ts": "npm run clean && tsc",
     "watch-ts": "npm run clean && tsc -w",
     "compile": "tsc",
-    "prepare": "npm run compile",
     "pretest": "npm run clean && npm run compile",
-    "start": "dist",
     "tslint": "npx tslint -c tslint.json 'src/**/*.ts'",
     "test": "jest --detectOpenHandles --verbose --colors"
   },
