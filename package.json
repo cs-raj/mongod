@@ -1,5 +1,5 @@
 {
-  "name": "Test_package_raj",
+  "name": "Package_1",
   "author": "Contentstack Ecosystem <ecosystem@contentstack.com>",
   "version": "1.0.4",
   "description": "Contentstack datasync's mongodb library. Helps to store contents in mongodb",
